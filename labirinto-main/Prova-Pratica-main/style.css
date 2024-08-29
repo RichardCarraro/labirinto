@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(171, 208, 247);
+    background-size: 100%;
+}
+
+#labirinto {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-gap: 10px; /* Espaço entre as células */
+    width: 50vw; /* Ajusta para a largura da tela */
+    height: 50vh; /* Ajusta para a altura da tela */
+    max-width: 1000px; /* Limite de largura */
+    max-height: 500px; /* Limite de altura */
+    margin: auto; /* Centraliza na tela */
+    box-sizing: border-box;
+    row-gap: 10px; 
+    
+ 
+   
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 100%; /* Mantém a proporção 1:1 das células */
+    text-align: center;
+    line-height: 1.2; /* Ajuste a altura da linha */
+    border: 1px solid #cccccc;
+    font-size: 20px; /* Ajuste o tamanho da fonte */
+    box-sizing: border-box;
+    border-radius: 10px 10px;
+    
+}
+
+.player {
+    background-color: rgb(1, 66, 245);
+    border-bottom: 2px solid rgb(0, 17, 255); /* Ajuste o estilo do border-bottom conforme necessário */
+}
+
+.start {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.end {
+    background-color: rgb(5, 194, 14);
+    color: white;
+}
